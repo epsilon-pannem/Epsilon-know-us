@@ -9,14 +9,14 @@
 	          <span class="icon-bar"></span>
 	          <span class="icon-bar"></span>
 	          <span class="icon-bar"></span>
-	        </button>
+	    </button>
 	</div>
 	<div class="logo">
-	                <sly data-sly-use.path="com.epsilonapp.core.models.LogoModel">
-	                    <sly data-sly-test="${path.URL}">
-	                      <sly data-sly-test="${properties.newWindow}"><a href="${path.URLPath}" target="_blank" class="icon-Epsilon-logo"></a></sly>
-	                      <sly data-sly-test="${!properties.newWindow}"><a href="${path.URLPath}" class="icon-Epsilon-logo"></a></sly>
-	                   </sly>
-	              </sly>
-	          </div>
+    <sly data-sly-test="${properties.URL}">
+	    <sly data-sly-use.path="com.epsilonapp.core.models.LogoModel">
+	          <sly data-sly-test="${properties.newWindow}"><a href="${path.URLPath}" target="_blank" class="icon-Epsilon-logo"></a></sly>
+	          <sly data-sly-test="${!properties.newWindow}"><a href="${path.URLPath}" class="icon-Epsilon-logo"></a></sly>
+	    </sly>
+     </sly>
+     </div>
 </section>
