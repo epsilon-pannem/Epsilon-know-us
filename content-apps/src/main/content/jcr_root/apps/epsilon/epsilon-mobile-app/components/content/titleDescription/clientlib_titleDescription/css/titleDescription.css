@@ -1,0 +1,87 @@
+.title-description.align-center {
+  text-align: center; }
+
+.title-description.align-left {
+  text-align: left; }
+
+.title-description.align-right {
+  text-align: right; }
+
+.title-description h2 {
+  font-family: "Vectora Light", Arial, Helvetica, sans-serif;
+  font-size: 58px;
+  margin: 0px;
+  padding: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .title-description h2 {
+      font-size: 36px;
+      margin: 0px; } }
+
+.title-description h3 {
+  font-family: "Vectora bold", Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .title-description h3 {
+      font-size: 21px; } }
+
+.title-description h4 {
+  font-family: "Vectora bold", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  margin: 0px;
+  padding: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .title-description h4 {
+      font-size: 16px; } }
+
+.title-description h5 {
+  font-family: "Vectora bold", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .title-description h5 {
+      font-size: 15px; } }
+
+.title-description h6 {
+  font-family: "Vectora bold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .title-description h6 {
+      font-size: 14px; } }
+
+.title-description p {
+  font-family: "Vectora Light", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #666666;
+  letter-spacing: 0.025em; }
+
+.title-description a {
+  font-family: "Vectora Roman", Arial, Helvetica, sans-serif;
+  color: #50aa9b;
+  text-decoration: none; }
+
+.title-description ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 12px;
+  font-family: "Vectora Light", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.025em; }
+  .title-description ul li:before {
+    content: " ";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background: #666666;
+    position: absolute;
+    left: 0;
+    top: 7px; }
+
+.title-description ol {
+  list-style-position: inside;
+  font-family: "Vectora Light", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.025em; }

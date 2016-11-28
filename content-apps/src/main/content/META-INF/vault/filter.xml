@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/epsilon/epsilon-mobile-app"/>
+    <filter root="/etc/clientlibs/epsilon/ionic-1.1.0"/>
+    <filter root="/etc/clientlibs/epsilon/phonegap-ready"/>
+    <filter root="/etc/clientlibs/epsilon/utility"/>
+    <filter root="/etc/designs/phonegap/epsilon/epsilon-mobile-app"/>
+    <filter root="/content/dam/epsilon/epsilon-mobile-app"/>
+</workspaceFilter>

@@ -1,0 +1,15 @@
+<sly data-sly-test.isImage="${!properties.foregroundimage}">
+<p data-sly-test="${wcmmode.edit || wcmmode.design}">Configure Image Component</p>
+</sly>
+<sly data-sly-test="${!isImage}">
+<section class="image-component center-align">
+	<div class="c-img">
+		<img class="img-responsive" src="${properties.foregroundimage}" title="${properties.title}" alt="${properties.imageAlttext}">
+	</div>
+    <sly data-sly-test="${properties.description}">
+	<div class="img-desc">
+		<p>${properties.description}</p>
+	</div>
+    </sly>
+</section>
+</sly>

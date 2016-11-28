@@ -1,0 +1,11 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+	<sly data-sly-test="${!properties.title}">
+		Configure Title and Description Component
+	</sly>
+</sly>
+<section class="title-description ${properties.alignment} clearfix">
+	<sly data-sly-test="${properties.title}">
+	<h2 data-sly-element="${properties.titletag}">${properties.title}</h2>
+	</sly>
+	<p>${properties.text @context='html'}</p>
+</section>

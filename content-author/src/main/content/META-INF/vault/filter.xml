@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/content/mobileapps/epsilon-mobile-app">
+        <include pattern="/content/mobileapps/epsilon-mobile-app(/.*)?"/>
+        <exclude pattern="/content/mobileapps/epsilon-mobile-app/shell(/.*)?"/>
+    </filter>
+</workspaceFilter>

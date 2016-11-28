@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="epsilon-mobile-app App Template"
+    jcr:primaryType="cq:Template"
+    jcr:title="epsilon-mobile-app App"
+    allowedPaths="[/content/mobileapps(/.*)?,/content/mobileapps(/.*)?]"
+    wizard="/libs/mobileapps/admin/content/createappsteps.html">
+    <jcr:content
+        cq:allowedTemplates="[/apps/epsilon/epsilon-mobile-app/templates/.*]"
+        cq:designPath="/etc/designs/phonegap/epsilon/epsilon-mobile-app"
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2014-12-03T09:43:04.192-05:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="epsilon-mobile-app App"
+        sling:resourceType="mobileapps/core/components/group"/>
+</jcr:root>

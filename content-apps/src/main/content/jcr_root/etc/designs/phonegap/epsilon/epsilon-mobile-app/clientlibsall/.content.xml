@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[apps.epsilon.epsilon-mobile-app.all]"
+    dependencies="[epsilon.ionic-1.1.0]"
+    embed="[epsilon.btford-angular-phonegap,apps.epsilon.nav,apps.epsilon.epsilon-mobile-app,epsilon.utility,cq.mobile.content-sync-2]"/>
