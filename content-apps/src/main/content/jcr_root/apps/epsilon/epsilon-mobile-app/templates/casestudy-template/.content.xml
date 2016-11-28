@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Casestudy page template"
+    jcr:primaryType="cq:Template"
+    jcr:title="CaseStudy Page"
+    allowedParents="[/apps/epsilon/epsilon-mobile-app/templates/standard-template]"
+    allowedPaths="[/content/mobileapps(/.*)?,/content/mobileapps(/.*)?]"
+    ranking="{Long}100">
+    <jcr:content
+        cq:designPath="/etc/designs/phonegap/epsilon/epsilon-mobile-app"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="epsilon/epsilon-mobile-app/components/structure/casestudypage"/>
+</jcr:root>

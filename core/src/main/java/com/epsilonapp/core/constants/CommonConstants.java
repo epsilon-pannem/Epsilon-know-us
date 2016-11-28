@@ -64,7 +64,7 @@ public final class CommonConstants {
     public static final String PATH = "path";
     
     /** Case Study Pages Path    */
-    public static final String CONTENT_EPSILON_EN_CASESTUDY = "/content/epsilon2_0/en_US/case-studies";
+    public static final String CONTENT_EPSILON_EN_CASESTUDY = "/content/mobileapps/epsilon-mobile-app/en/case-studies";
     
     /** The Constant NAME  */
     public static final String NAME = "name";
@@ -105,9 +105,6 @@ public final class CommonConstants {
     /** The Constant CQ_TEMPLATE. */
     public static final String CQ_TEMPLATE = "cq:template";
     
-    /** The Constant LOCATION_TEMPLATE. */
-    public static final String LOCATION_TEMPLATE = "/apps/epsilon2_0/templates/location-template";
-    
     /** The Constant NAV_TITLE. */
 	public static final String NAV_TITLE = "navTitle";
 	
@@ -133,7 +130,7 @@ public final class CommonConstants {
 	public static final String CAROUSEL_PATH = "carouselPath";
 
 	/** The Constant HERO_COMPONENT. */
-	public static final String HERO_COMPONENT = "epsilon2_0/components/content/hero";
+	public static final String HERO_COMPONENT = "epsilon/epsilon-mobile-app/components/content/hero";
 
 	/** The Constant PAR_CONTENT. */
 	public static final String PAR_CONTENT = "parcontent";
