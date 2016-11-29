@@ -4,6 +4,9 @@
     <filter root="/etc/clientlibs/epsilon/ionic-1.1.0"/>
     <filter root="/etc/clientlibs/epsilon/phonegap-ready"/>
     <filter root="/etc/clientlibs/epsilon/utility"/>
-    <filter root="/etc/designs/phonegap/epsilon/epsilon-mobile-app"/>
-    <filter root="/content/dam/epsilon/epsilon-mobile-app"/>
+    <filter root="/etc/designs/phonegap/epsilon/epsilon-mobile-app/">
+    	<exclude pattern="/etc/designs/phonegap/epsilon/epsilon-mobile-app/jcr:content"/>
+    	<exclude pattern="/etc/designs/phonegap/epsilon/epsilon-mobile-app/jcr:content/(.*)"/>
+    </filter>
+   <!--<filter root="/content/dam/epsilon/epsilon-mobile-app"/>  --> 
 </workspaceFilter>

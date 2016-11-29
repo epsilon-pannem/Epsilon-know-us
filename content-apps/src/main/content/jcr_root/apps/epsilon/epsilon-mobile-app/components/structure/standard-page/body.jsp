@@ -10,6 +10,7 @@
 %><c:set var="wcmMode"><%= WCMMode.fromRequest(request) != WCMMode.DISABLED %></c:set><%
 %>
 <body ng-controller="AppController">
+    <div id="appWrap" ng-controller="AppNavigationController" ng-cloak>
  	<c:choose>
     	<c:when test="${wcmMode}">
         	<div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -21,6 +22,7 @@
             <script type="text/javascript" src="<%= xssAPI.getValidHref( relativePathToRoot ) %>cordova.js"></script>
         </c:otherwise>
     </c:choose>
+    </div>
     <cq:includeClientLib js="epsilon.ionic-1.1.0"/>
     <script src="<c:out value='${currentPage.name}'/>.angular-app-module.js"></script>
     <script src="<c:out value='${currentPage.name}'/>.angular-app-controllers.js"></script>
