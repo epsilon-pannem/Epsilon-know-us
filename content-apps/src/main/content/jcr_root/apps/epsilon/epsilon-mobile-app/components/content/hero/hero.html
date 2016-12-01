@@ -1,0 +1,19 @@
+<sly data-sly-test.isHero="${properties.tabletImage}"></sly>
+<sly data-sly-test="${!isHero}">
+	<p data-sly-test="${wcmmode.edit || wcmmode.design}">Configure Hero Image Component</p>
+</sly>
+<sly data-sly-test="${isHero}">
+	<sly data-sly-test="${properties.headlineDefault}">
+	<section class="sub-banner">
+		<sly data-sly-include="backgroundImage.html"></sly>
+		<div class="col-lg-7 col-md-7 col-sm-8 col-xs-12 sub-banner-description ${properties.verticalAlignmentDefault} ${properties.horizontalAlignmentDefault}">
+             <sly data-sly-test="${properties.headlineDefault}">
+                <h2>${properties.headlineDefault}</h2>
+            </sly>
+			<sly data-sly-test="${properties.descriptionDefault}">
+				<p>${properties.descriptionDefault}</p>
+			</sly>
+		</div>
+	</section>
+	</sly>
+</sly>

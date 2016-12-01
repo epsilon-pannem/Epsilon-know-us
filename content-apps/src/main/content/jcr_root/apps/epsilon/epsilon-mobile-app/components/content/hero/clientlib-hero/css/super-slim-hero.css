@@ -1,0 +1,7 @@
+.slim-header {
+  background: #000;
+  height: 121px;
+  overflow: hidden;
+  width: 100%; }
+  .slim-header img {
+    width: 100%; }

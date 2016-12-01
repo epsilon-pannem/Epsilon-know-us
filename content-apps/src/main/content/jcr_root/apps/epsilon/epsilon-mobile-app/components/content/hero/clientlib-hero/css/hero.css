@@ -1,0 +1,46 @@
+.ep-hero-component {
+  overflow: hidden;
+  position: relative;
+  font-family: "Vectora Light", Arial, Helvetica, sans-serif; }
+  .ep-hero-component img {
+    width: 100%; }
+  .ep-hero-component .hero-description {
+    position: absolute;
+    right: 86px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .ep-hero-component .hero-description {
+        right: 45px; } }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .ep-hero-component .hero-description {
+        right: 0px;
+        top: auto;
+        bottom: 30px;
+        padding: 0 28px;
+        transform: translateY(0); } }
+    .ep-hero-component .hero-description h2 {
+      font-size: 50px;
+      color: #fff;
+      padding: 0px;
+      margin: 0px 0 21px 0; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .ep-hero-component .hero-description h2 {
+          font-size: 36px; } }
+    .ep-hero-component .hero-description h3, .ep-hero-component .hero-description h4, .ep-hero-component .hero-description h5, .ep-hero-component .hero-description h6 {
+      color: #fff;
+      text-align: center;
+      margin: 0px 0 21px 0;
+      padding: 0px; }
+    .ep-hero-component .hero-description p {
+      font-size: 21px;
+      color: #fff;
+      margin-bottom: 20px; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .ep-hero-component .hero-description p {
+          font-size: 14px; } }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .ep-hero-component .hero-description .btn-shape {
+        width: 100%;
+        text-align: center; } }
