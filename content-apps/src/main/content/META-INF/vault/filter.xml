@@ -8,5 +8,5 @@
     	<exclude pattern="/etc/designs/phonegap/epsilon/epsilon-mobile-app/jcr:content"/>
     	<exclude pattern="/etc/designs/phonegap/epsilon/epsilon-mobile-app/jcr:content/(.*)"/>
     </filter>
-   <!--<filter root="/content/dam/epsilon/epsilon-mobile-app"/>  --> 
+    <filter root="/content/dam/epsilon/epsilon-mobile-app"/>
 </workspaceFilter>

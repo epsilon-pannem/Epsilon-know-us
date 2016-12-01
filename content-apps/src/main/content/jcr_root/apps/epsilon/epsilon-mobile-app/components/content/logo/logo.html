@@ -13,10 +13,7 @@
 	</div>
 	<div class="logo">
     <sly data-sly-test="${properties.URL}">
-	    <sly data-sly-use.path="com.epsilonapp.core.models.LogoModel">
-	          <sly data-sly-test="${properties.newWindow}"><a ng-click="go('${path.URLPath}')" target="_blank" class="icon-Epsilon-logo"></a></sly>
-	          <sly data-sly-test="${!properties.newWindow}"><a ng-click="go('${path.URLPath}')" class="icon-Epsilon-logo"></a></sly>
-	    </sly>
+        <a ng-click="go('${properties.URL}')" class="logo"></a>
      </sly>
      </div>
 </section>

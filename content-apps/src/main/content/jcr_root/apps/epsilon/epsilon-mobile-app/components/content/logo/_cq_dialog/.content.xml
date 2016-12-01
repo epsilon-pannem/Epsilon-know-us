@@ -20,17 +20,6 @@
                         fieldLabel="Logo URL"
                         name="./URL"
                         rootPath="/content/mobileapps/epsilon-mobile-app/en"/>
-                    <newWindow
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                        name="./newWindow"
-                        text="New Window"
-                        value="{Boolean}true"/>
-                    <newWindowDelete
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/hidden"
-                        name="./newWindow@delete"
-                        value="{Boolean}true"/>
                 </items>
             </column>
         </items>
