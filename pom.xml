@@ -332,7 +332,7 @@
   <modules>
       <module>core</module>
       <module>content-apps</module> 
-   <!--     <module>content-shell</module>
-      <module>content-author</module>-->
+      <module>content-shell</module>
+      <module>content-author</module>
   </modules>
 </project>

@@ -1,48 +1,28 @@
-(function(){
- // navigation component specific code here…
+$(document).ready(function () {
+  var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
+     isClosed = false;
 
- var controller = new slidebars();
- 	 controller.init();
-
- 	$( '.toggle-slidebar' ).on( 'click', function ( event ) {
-
-        event.stopPropagation();
-        controller.toggle( 'left-nav' );
+    trigger.click(function () {
+      hamburger_cross();      
     });
 
-	$('.mainNavigation> ul> li> a').on('click', function(){
-			$('.mainNavigation li').removeClass('active');
-			$(this).parent().addClass('active')	;
+    function hamburger_cross() {
 
-			if($(window).width() < 990){
-				$('.mainNavigation').addClass('mobileNav');
-				
-				if($('.subItem').is(":visible")){
-					$('.navigation').addClass('mobilePosition');
-				}
-			}
-
-		})
-
-		$('.mainNavigation ul li').on('click', '.closebtn', function(){
-			$('.mainNavigation li').removeClass('active');
-			$('.mainNavigation').removeClass('mobileNav');
-			
-			if($(window).width() < 990){
-				$('.navigation').toggleClass('mobilePosition');
-			}
-
-		})
-
-
-		$('.two-level li').on('click', 'a', function(){
-			if($(window).width() < 990){
-				$('.two-level li').removeClass('expand');
-				$(this).parent().addClass('expand');
-			}
-		})
-
-
-		$('.icon-Whoweare').closest('li').addClass('one-column')
-		
-})();
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});

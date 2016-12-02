@@ -1,187 +1,40 @@
-<sly data-sly-use.menu="com.epsilon2_0.core.use.Menu"/></sly>
+<sly data-sly-use.menu="com.epsilonapp.core.use.Menu"/></sly>
 <p data-sly-test="${wcmmode.edit || wcmmode.design}">Configure Menu Component</p>
-<section class="navigation" off-canvas="left-nav left reveal">
-<nav class="mainNavigation">
-<div class="mobile-search visible-xs visible-sm">
-	<input type="text" placeholder="Search" class="form-control">
-</div>
-<ul>
-<sly data-sly-list.menuList="${menu.optionsList}">
-<sly data-sly-test.menuOption="${menuList.menuOptionsBean}">
-<sly data-sly-test="${menuOption.menuType == 'redirectType'}">
-	<li class="${menuOption.pageTheme}"><a href="${menuOption.redirectUrl}" target="${menuOption.newWindow}">
-		<span class="${menuOption.iconImage}"></span>${menuOption.title}</a></li>
-</sly>
-<sly data-sly-test="${menuOption.menuType == 'searchOption'}">
-	<li class="search">
-		<div class="closebtn"><span class="icon-close-out"></span></div>
-		<a href="#"><span class="${menuOption.iconImage}"></span>${menuOption.title}</a>
-		<div class="subItem">
-			<div class="innerWrapper">
-				<h2><span class="${menuOption.iconImage}"></span>${menuOption.title}</h2>
-				<div class="col-lg-12 col-xs-12 search-flyout">
-					<form id="search-site" name="search-site" action="${menu.searchPageUrl}" target="_blank">
-					<fieldset>
-						<div class="col-lg-10 col-md-10 searchinput">
-							<input type="text" name="q" class="form-control" placeholder="${properties.searchPlaceholder}" />
-						</div>
-						<div class="col-lg-2 col-md-2 searchbtn"><button class="btn">${properties.searchButton}</button></div>
-					</fieldset>
-					</form>
-         		</div>
-			</div>
-		</div>
-	</li>
-</sly>
-<sly data-sly-test="${menuOption.menuType == 'contactUs'}">
-	<li class="contact ${menuOption.pageTheme}">
-		<div class="closebtn"><span class="icon-close-out"></span></div>
-		<a href="#"><span class="${menuOption.iconImage}"></span>${menuOption.title}</a>
-		<div class="subItem">
-			<div class="innerWrapper">
-				<h2><a href="${menuOption.redirectUrl}">
-					<span class="${menuOption.iconImage}"></span>${menuOption.title}</a></h2>
-				<div class="sub-header clearfix"><h3>${properties.officesLabel}</h3></div>
-				<sly data-sly-test="${menuList.primaryLocations}">
-					<sly data-sly-list="${menuList.primaryLocations}">
-						<sly data-sly-test="${itemList.odd}">
-							<div class="details col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<ul class="two-level">
-									<li><a href="${item.path}">${item.title}</a></li>
-								</ul>
-							</div>
-						</sly>
-						<sly data-sly-test="${itemList.even}">
-							<div class="details col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<ul class="two-level">
-									<li><a href="${item.path}">${item.title}</a></li>
-								</ul>
-							</div>
-						</sly>
-					</sly>
-					<sly data-sly-test.viewAll="${menuList.viewAllContact}">
-						<sly data-sly-test="${viewAll.title}">
-							<ul class="two-level view-all-contact col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right">
-								<li><a href="${viewAll.redirectUrl}">${viewAll.title} <span class="icon-arrow"></span></a></li>
-							</ul>
-						</sly>
-					</sly>
-				</sly>
-			</div>
-		</div>
-	</li>
-</sly>
-<sly data-sly-test="${menuOption.menuType == 'childrenDisplay'}">
-	<li class="sub-child ${menuOption.pageTheme}">
-		<div class="closebtn"><span class="icon-close-out"></span></div>
-		<a href="#"><span class="${menuOption.iconImage}"></span>${menuOption.title}</a>
-		<div class="subItem">
-			<div class="innerWrapper">
-				<h2 class="nav-title"><a href="${menuOption.redirectUrl}">
-					<span class="${menuOption.iconImage}"></span>${menuOption.title}</a></h2>
-				<sly data-sly-test="${menuList.childLinks}">
-					<div class="details col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<sly data-sly-list="${menuList.childLinks}">
-							<ul class="two-level">
-								<sly data-sly-test="${itemList.odd}">
-									<li data-sly-test.firstLevelOption="${item.menuOptionsBean}">
-										<a href="${firstLevelOption.redirectUrl}">
-											<span class="${firstLevelOption.iconImage}"></span>${firstLevelOption.title}</a>
-										<ul class="child-items clearfix">
-											<li data-sly-list.secondLevel="${item.childLinks}">
-												<sly data-sly-test.secondLevelOption="${secondLevel.menuOptionsBean}">
-													<a href="${secondLevelOption.redirectUrl}">${secondLevelOption.title}</a>
-												</sly>
-											</li>
-										</ul>
-									</li>
-								</sly>
-							</ul>
-						</sly>
-					</div>
-					<div class="details col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<sly data-sly-list="${menuList.childLinks}">
-							<ul class="two-level">
-								<sly data-sly-test="${itemList.even}">
-									<li data-sly-test.firstLevelOption="${item.menuOptionsBean}">
-										<a href="${firstLevelOption.redirectUrl}">
-											<span class="${firstLevelOption.iconImage}"></span>${firstLevelOption.title}</a>
-										<ul class="child-items clearfix">
-											<li data-sly-list.secondLevel="${item.childLinks}">
-												<sly data-sly-test.secondLevelOption="${secondLevel.menuOptionsBean}">
-													<a href="${secondLevelOption.redirectUrl}">${secondLevelOption.title}</a>
-												</sly>
-											</li>
-										</ul>
-									</li>
-								</sly>
-							</ul>
-						</sly>
-					</div>
-				</sly>
-			</div>
-  		</div>
-	</li>	
-</sly>
-<sly data-sly-test="${menuOption.menuType == 'categoryList'}">
-	<li class="sub-child ${menuOption.pageTheme}">
-		<div class="closebtn"><span class="icon-close-out"></span></div>
-		<a href="#"><span class="${menuOption.iconImage}"></span>${menuOption.title}</a>
-		<div class="subItem">
-			<div class="innerWrapper">
-				<h2><a href="${menuOption.redirectUrl}">
-					<span class="${menuOption.iconImage}"></span>${menuOption.title}</a></h2>
-				<sly data-sly-test="${menuList.childLinks}">
-					<sly data-sly-list.category="${menuList.childLinks}">
-						<div class="sub-header clearfix"><h3>${category.menuOptionsBean.title}</h3></div>
-						<sly data-sly-test="${category.childLinks}">
-							<div class="details col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<sly data-sly-list="${category.childLinks}">
-									<ul class="two-level">
-										<sly data-sly-test="${itemList.odd}">
-											<li data-sly-test.firstLevelOption="${item.menuOptionsBean}">
-												<a href="${firstLevelOption.redirectUrl}">
-													<span class="${firstLevelOption.iconImage}"></span>${firstLevelOption.title}</a>
-												<ul class="child-items clearfix">
-													<li data-sly-list.secondLevel="${item.childLinks}">
-														<sly data-sly-test.secondLevelOption="${secondLevel.menuOptionsBean}">
-															<a href="${secondLevelOption.redirectUrl}">${secondLevelOption.title}</a>
-														</sly>
-													</li>
-												</ul>
-											</li>
-										</sly>
-									</ul>
-								</sly>
-							</div>
-							<div class="details col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<sly data-sly-list="${category.childLinks}">
-									<ul class="two-level">
-										<sly data-sly-test="${itemList.even}">
-											<li data-sly-test.firstLevelOption="${item.menuOptionsBean}">
-												<a href="${firstLevelOption.redirectUrl}">
-													<span class="${firstLevelOption.iconImage}"></span>${firstLevelOption.title}</a>
-												<ul class="child-items clearfix">
-													<li data-sly-list.secondLevel="${item.childLinks}">
-														<sly data-sly-test.secondLevelOption="${secondLevel.menuOptionsBean}">
-															<a href="${secondLevelOption.redirectUrl}">${secondLevelOption.title}</a>
-														</sly>
-													</li>
-												</ul>
-											</li>
-										</sly>
-									</ul>
-								</sly>
-							</div>
-						</sly>
-					</sly>
-	        	</sly>
-			</div>
-		</div>
-	</li>    
-</sly>
-</sly>
-</sly>
-</ul>
+<div class="overlay"></div>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+    	<li class="logo"> <a href="#" class="icon-epsilon-logo"></a></li>
+		<sly data-sly-list.menuOptionBean="${menu.optionsList}">
+            <sly data-sly-test=${menuOptionBean.isRedirectType}>
+    			<li> 
+    				<a ng-click="go('${menuOptionBean.redirectUrl}')">
+    					<i class="fa fa-fw fa-bank"></i>${menuOptionBean.title}
+					</a>
+                </li>   
+            </sly>
+
+            <sly data-sly-test=${menuOptionBean.isChildrenDisplay}>
+
+                  <li class="dropdown"><a ng-click="go('${menuOptionBean.redirectUrl}')" class="dropdown-toggle" data-toggle="dropdown">${menuOptionBean.title}<span class="caret pull-right"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <sly data-sly-list.childMenuOption=${menuOptionBean.childMenuOptions}>
+                      	<li><a ng-click="go('${childMenuOption.redirectUrl}')">${childMenuOption.title}</a></li>
+                      </sly>
+                    </ul>
+                  </li>
+            </sly>
+   	 	</sly>
+     </ul>
 </nav>
-</section>
+
+
+
+
+
+
+
+
+
+
+
+

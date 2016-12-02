@@ -1,2 +1,5 @@
 #base=js
+jquery.min.js
+bootstrap.min.js
+picturefill.min.js
 main.js
