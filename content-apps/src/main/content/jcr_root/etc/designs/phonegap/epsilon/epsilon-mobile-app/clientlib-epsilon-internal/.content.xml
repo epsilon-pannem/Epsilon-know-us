@@ -2,5 +2,4 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:ClientLibraryFolder"
     categories="[apps.epsilon-mobile-app.internal]"
-    dependencies="[cq.jquery]"
-    embed="[apps.epsilon-mobile-app.logo,apps.epsilon-mobile-app.menu]"/>
+    embed="[apps.epsilon-mobile-app.logo,apps.epsilon-mobile-app.menu,apps.epsilon-mobile-app.hero,apps.epsilon-mobile-app.list,apps.epsilon-mobile-app.imageComponent,apps.epsilon-mobile-app.titleDescription]"/>

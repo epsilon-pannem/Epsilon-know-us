@@ -1,0 +1,20 @@
+.list-component h4 {
+  font-family: "Vectora bold", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding-bottom: 6px;
+  color: #000; }
+
+.list-component ul li {
+  list-style-type: none;
+  padding: 6px 0;
+  color: #666666;
+  font-family: "Vectora Light", Arial, Helvetica, sans-serif; }
+  .list-component ul li a {
+    color: #00beab;
+    text-decoration: none;
+    font-family: "Vectora Roman", Arial, Helvetica, sans-serif; }
+
+.list-component.txt-variation h4 {
+  text-transform: uppercase;
+  margin-top: 15px; }

@@ -1,0 +1,35 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+    <sly data-sly-test="${!properties.title}">
+        <p>Configure List Component</p>
+    </sly>
+</sly>
+<sly data-sly-use.listObj="com.epsilonapp.core.models.ListModel"></sly>
+    <sly data-sly-test="${properties.type=='link'}">
+     <section class="list-component">
+	  <h4>${properties.title}</h4>
+
+	 <ul>
+        <sly data-sly-list.linkChild="${listObj.urlLinkList}">
+          <sly data-sly-test="${linkChild.url}">
+           <li><a ng-click="go('${linkChild.url}')" target="${linkChild.newWindow}">${linkChild.label}</a></li>
+          </sly>
+        <sly data-sly-test="${!linkChild.url}">
+          ${linkChild.label}
+        </sly>
+       </sly>
+	</ul>
+ </section>
+ </sly>
+
+ <sly data-sly-test="${properties.type=='text'}">
+    <section class="list-component txt-variation">
+       <h4>${properties.title}</h4>
+        <ul>
+         <sly data-sly-list.textChild="${listObj.textList}">
+          <li>${textChild}</li>
+         </sly>
+        </ul>
+    </section>
+ </sly>
+
+
