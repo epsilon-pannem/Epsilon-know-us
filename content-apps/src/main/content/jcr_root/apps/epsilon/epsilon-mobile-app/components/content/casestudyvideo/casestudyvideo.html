@@ -1,0 +1,24 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+		Configure Casestudy Video Component
+</sly>
+<sly data-sly-test="${properties.items}">
+<sly data-sly-use.casestudies="com.epsilonapp.core.models.CasestudyModel"/></sly>
+
+<ul class="casestudies">
+	<sly data-sly-list.csitem="${casestudies.casestudyDetails}">
+       <li><video controls class="video" width='200px' height="200px"  preload="auto" poster="${csitem.image}">
+   			 <source src="${csitem.video}" type="video/mp4">
+				Your browser does not support the video tag.
+		  </video></li>
+	</sly>
+</ul>
+</sly>
+
+<style>
+  .casestudies li {
+  	display: inline-block;
+    width:300px;
+    height:300px;
+  }
+
+</style>

@@ -1,0 +1,43 @@
+.c9-component {
+  background: #00a8d5;
+  /* Old browser */
+  background: -moz-linear-gradient(top, #00a8d5 0%, #3478ad 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00a8d5 0%, #3478ad 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00a8d5 0%, #3478ad 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a8d5', endColorstr='#3478ad',GradientType=0 );
+  /* IE6-9 */
+  text-align: center;
+  padding: 45px 0; }
+  .c9-component .title {
+    font-size: 28px;
+    font-family: "Vectora Light", Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-bottom: 30px; }
+  .c9-component ul, .c9-component li {
+    list-style-type: none; }
+  .c9-component li {
+    display: inline-block; }
+    .c9-component li a {
+      color: #fff;
+      font-family: "Vectora bold", Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      display: block;
+      padding: 0 30px;
+      border-right: solid 1px #77b7d6;
+      text-decoration: none;
+      font-size: 14px; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .c9-component li a {
+          padding: 15px 0;
+          font-size: 16px; } }
+    .c9-component li:last-of-type a {
+      border-right: none; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .c9-component li:last-of-type a {
+          padding-bottom: 0; } }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .c9-component li {
+        display: block; } }

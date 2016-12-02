@@ -70,9 +70,9 @@
                                     <ctaurl
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                                        fieldLabel="CTA URL"
                                         emptyText="Enter fully qualified URL for external URLs. Eg: https://www.epsilon.com"
                                         fieldDescription="Enter fully qualified URL for external URLs. Eg: https://www.epsilon.com"
+                                        fieldLabel="CTA URL"
                                         name="./ctaurlCasestudy"
                                         rootPath="/content/mobileapps/epsilon-mobile-app/en"/>
                                     <checkbox
@@ -116,6 +116,15 @@
                                         fieldLabel="Logo"
                                         name="./casestudylogo"
                                         rootPath="/content/dam/epsilon/epsilon-mobile-app"/>
+                                    <videoUrl
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                        emptyText="Enter fully qualified URL for external URLs. Eg: https://www.epsilon.com"
+                                        fieldDescription="Enter fully qualified URL for external URLs. Eg: https://www.epsilon.com"
+                                        fieldLabel="Video URL"
+                                        name="./videoUrl"
+                                        required="{Boolean}true"
+                                        rootPath="/content"/>
                                 </items>
                             </column>
                         </items>

@@ -1,0 +1,22 @@
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+		Configure Casestudy Component
+</sly>
+<sly data-sly-test="${properties.items}">
+<sly data-sly-use.casestudies="com.epsilonapp.core.models.CasestudyModel"/></sly>
+<ul class="casestudies">
+	<sly data-sly-list.csitem="${casestudies.casestudyDetails}">
+        <li>
+        <a ng-click="go('${csitem.pageUrl}')" target="_blank"><img
+				src="${csitem.image}"><p>${csitem.pageName}</p></a> 
+         </li>
+	</sly>
+</ul>
+</sly>
+<style>
+  .casestudies li {
+  	display: inline-block;
+    width:200px;
+    height:200px;
+  }
+
+</style>
